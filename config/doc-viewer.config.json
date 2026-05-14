@@ -1,0 +1,16 @@
+{
+  "projectsRoot": "../",
+  "docsDirName": "docs",
+  "host": "127.0.0.1",
+  "port": 4321,
+  "exclude": [
+    "doc-viewer/**",
+    "**/node_modules/**",
+    "**/.git/**",
+    "**/dist/**",
+    "**/build/**",
+    "**/.next/**",
+    "**/.vite/**",
+    "**/coverage/**"
+  ]
+}

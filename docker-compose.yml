@@ -1,0 +1,21 @@
+services:
+  doc-viewer:
+    build: .
+    container_name: doc-viewer
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:4321:4321"
+    environment:
+      DOC_VIEWER_PROJECTS_ROOT: /projects
+      DOC_VIEWER_DOCS_DIR_NAME: docs
+      DOC_VIEWER_HOST: 0.0.0.0
+      DOC_VIEWER_ALLOW_CONTAINER_HOST: "true"
+      DOC_VIEWER_VIEWER_PROJECT_NAME: doc-viewer
+      DOC_VIEWER_PORT: "4321"
+    volumes:
+      - ../:/projects:ro
+    read_only: true
+    tmpfs:
+      - /tmp
+    mem_limit: 256m
+    cpus: 0.5
