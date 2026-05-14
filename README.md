@@ -81,3 +81,7 @@ some-project/
 - ダークモード。
 - ドキュメント間リンクの補助表示。
 - 静的HTMLエクスポート。
+
+## License
+
+MIT
